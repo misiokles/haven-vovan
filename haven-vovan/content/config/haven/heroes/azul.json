@@ -1,0 +1,74 @@
+{
+	"azul" :
+	{
+		"class" : "admiralf",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Азул",
+			"biography" : "Азул — мастер холодной магии школы самого Левиафана. Долго практикующая эту школу, она обучает секретам заклинания Frost Ring, которое она произносит в совершенстве. Устав от преподавания, она попросила присоединиться к Континентальной кампании Рейвен, поскольку всегда хотела применить свои навыки в реальной боевой ситуации.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус заклинания: Ледяное кольцо",
+				"name" : "Ледяное кольцо",
+				"description" : "{Ледяное кольцо}\r\n\r\nПрименяет «Кольцо льда», урон которого увеличивается на 7% за каждые n уровней героя (n — уровень целевого существа)."
+			}
+		},
+		"images" :
+		{
+			
+			"specialtySmall" : "haven/heroes/azul/spec-small.png",
+			"specialtyLarge" : "haven/heroes/azul/spec-large.png",
+			"large" : "haven/heroes/azul/portrait-large.png",
+			"small" : "haven/heroes/azul/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"frostRing"
+		],
+
+
+		"army" :
+		[
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"frostRing" : {
+					"subtype" : "spell.frostRing",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 7
+				}
+			}
+		}
+	}
+}

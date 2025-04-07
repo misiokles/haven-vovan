@@ -1,0 +1,58 @@
+{
+	"crab1":
+	{
+		"name" :
+		{
+			"plural" : "Огромные крабы",
+			"singular" : "Огромный краб"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 25
+		},
+		"faction" : "haven",
+		"aiValue" : 140,
+		"attack" : 6,
+		"hasDoubleWeek" : true,
+                "cost" :
+		{
+			"gold" : 125
+		},
+		"damage" :
+		{
+			 "max" : 3,
+			 "min" : 2
+		},
+		"defense" : 7,
+		"fightValue" : 125,
+		"horde" : 6,
+		"graphics" :
+		{
+			"animation" : "haven/battle/crab1.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/crab1mini.def",
+			"iconSmall" : "haven/iconsSmall/crab1s.bmp",
+			"iconLarge" : "haven/iconsBig/crab1l.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+
+		"growth" : 8,
+	    "doubleWide" : true,			
+		"hitPoints" : 20,
+        "level" : 2,
+		"upgrades":
+		[
+			"crab2"
+		],
+		"sound" :
+		{
+			"attack" : "haven/crabatk.wav",
+			"defend" : "haven/crabblk.wav",
+			"killed" : "haven/crabdie.wav",
+			"move": "haven/crabwlk.wav",
+			"wince" : "haven/crabhit.wav"
+		},
+		"speed" : 4
+	}
+}

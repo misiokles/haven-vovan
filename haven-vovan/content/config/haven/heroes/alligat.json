@@ -1,0 +1,59 @@
+{
+	"alligat" :
+	{
+		"class" : "manowar",
+		"texts" :
+		{
+			"name" : "Аллигат",
+			"biography" : "Рейвен долго искал хорошего командира для своей миссии, прежде чем, наконец, привлек внимание Аллигата, представителя расы крабов. Хотя крабы славятся тем, что их трудно контролировать, Аллигат оказался очень разумным в обращении с ними. Крабы под его командованием особенно сильны и дисциплинированы. Все это склонило чашу весов в пользу того, чтобы Аллигат стал одним из будущих командиров континентальной кампании Рейвена.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус существа: Крабы",
+				"name" : "Крабы",
+				"description" : "{Крабы}\r\n\r\nУвеличивает скорость любых крабов на 1, а также их навыки атаки и защиты на 5% за каждые 3 уровня (округлено в большую сторону)."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/alligat/spec-small.png",
+			"specialtyLarge" : "haven/heroes/alligat/spec-large.png",
+			"large" : "haven/heroes/alligat/portrait-large.png",
+			"small" : "haven/heroes/alligat/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "crab1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "undine1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "armorer"
+			},
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "crab1"
+		}	
+	}
+}

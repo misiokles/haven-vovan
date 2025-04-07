@@ -1,0 +1,57 @@
+{
+	"marin" :
+	{
+		"class" : "admiral",
+		"texts" :
+		{
+			"name" : "Марин",
+			"biography" : "Будучи мастером Гильдии морских епископов Акварона, Марин является экспертом Водной магии. Он в совершенстве изучил все тонкости этой магической школы. По покровительству Акварона, Рейвен взял Марина в свой Континентальный поход и наградил его званием Адмирала.",
+			"specialty" :
+			{
+				"description" : "{Магия воды}\r\n\r\nНачинает с навыка Продвинутая магия воды.",
+				"tooltip" : "Бонус вторичного навыка: Магия воды",
+				"name" : "Магия воды"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/marin/spec-small.png",
+			"specialtyLarge" : "haven/heroes/marin/spec-large.png",
+			"large" : "haven/heroes/marin/portrait-large.png",
+			"small" : "haven/heroes/marin/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"bless"
+		],
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty" : {
+		}
+	}
+}

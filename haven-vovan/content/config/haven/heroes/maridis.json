@@ -1,0 +1,70 @@
+{
+	"maridis" :
+	{
+		"class" : "admiral",
+		"texts" :
+		{
+			"name" : "Маридис",
+			"biography" : "Один из четырех учеников Хайдрона и основатель его библиотеки, Маридис действительно достиг совершенства в восстановлении маны. Самое заветное его желание — найти когда-нибудь магический ключ к силе восстановления маны. Этот ключ создан Левиафаном и назван Жемчужиной Океана. О том, что такой ключ существует, он узнал от своего учителя и с тех пор идея найти этот ключ не покидает его. Ведь если это произойдет, то мана никогда не кончится.", 
+			"specialty" :
+			{
+				"tooltip" : "Бонус вторичного навыка: Мистицизм",
+				"description" : "{Мистицизм}\r\n\r\nПолучает бонус 5% за уровень к проценту навыка Мистицизма.",
+				"name" : "Мистицизм"
+			}
+		},		
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/maridis/spec-small.png",
+			"specialtyLarge" : "haven/heroes/maridis/spec-large.png",
+			"large" : "haven/heroes/maridis/portrait-large.png",
+			"small" : "haven/heroes/maridis/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"bless"
+		],
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "undine1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "mysticism"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		"specialty" : {
+			"bonuses" : {
+				"mysticism" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "MANA_REGENERATION",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL"
+				}
+			}
+		}
+	}
+}

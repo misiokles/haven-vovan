@@ -1,0 +1,59 @@
+{
+	"undine" : 
+	{
+		"class" : "manowarf",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Очаровательная Ундина",
+			"biography" : "Очаровательная Ундина — одна из лучших учениц эльфа Галласа. Она овладела не только мастерством стрельбы из лука, но и мудростью военного командования. Со временем ее авторитет среди других ундин стал непререкаемым. Настолько, что под ее началом они всегда демонстрируют отменный боевой дух. Острый ум и природная хитрость позволили Ундине проявить себя как незаменимой разведчице. Иллианису не пришлось долго искать кого-то на эту должность в его континентальном походе.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус существа: Ундины",
+				"name" : "Ундины",
+				"description" : "{Ундины}\r\n\r\nУвеличивает скорость любой ундины на 1, а также ее навыки атаки и защиты на 5% за каждые 3 уровня (округлено в большую сторону)."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/undine/spec-small.png",
+			"specialtyLarge" : "haven/heroes/undine/spec-large.png",
+			"large" : "haven/heroes/undine/portrait-large.png",
+			"small" : "haven/heroes/undine/portrait-small.png"
+		},
+
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "crab1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+			{
+				"level" : "basic",
+				"skill" : "intelligence"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "undine1"
+		}	
+	}
+}

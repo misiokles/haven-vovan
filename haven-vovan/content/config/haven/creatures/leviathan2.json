@@ -1,0 +1,82 @@
+{
+	"leviathan2":
+	{
+		"name" :
+		{
+			"plural" : "Хозяева морей",
+			"singular" : "Хозяин морей"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 8,
+			 "min" : 3
+		},
+		"faction" : "haven",
+		"aiValue" : 7210,
+		"attack" : 28,
+		"cost" :
+		{
+			"gold" : 3900,
+			"crystal" : 2
+		},
+		"damage" :
+		{
+			 "max" : 55,
+			 "min" : 30
+		},
+		"defense" : 21,
+		"fightValue" : 5540,
+		"graphics" :
+		{
+			"animation" : "haven/battle/leviathan2.def",
+			"map" : "haven/map/leviathan2mini.def",
+			"iconSmall" : "haven/iconsSmall/leviathan2s.bmp",
+			"iconLarge" : "haven/iconsBig/leviathan2l.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 0.9,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+	
+		},
+		"growth" : 1,
+		"hitPoints" : 300,
+		"level" : 7,
+	    "doubleWide" : true,		
+		"sound" :
+		{
+			"attack" : "haven/leviatk.wav",
+			"defend" : "haven/levihit.wav",
+			"killed" : "haven/levidie.wav",
+			"move": "haven/leviwlk.wav",
+			"wince" : "haven/levihit.wav"
+		},
+		"speed" : 11,
+		"abilities" :
+		{
+			"dragon" : 
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"reduceDefence" :
+			{
+				"type" : "ENEMY_DEFENCE_REDUCTION",
+				"val" : 20
+			},
+			"lifeEater" :
+			{
+				"type": "SPELL_BEFORE_ATTACK",
+				"subtype" : "spell.seaWrath2",
+				"val" : 100
+			},
+			"KING1" :
+			{
+				"type" : "KING",
+				"val" : 0,
+				"valueType" : "ADDITIVE_VALUE"
+			}
+		}
+	}
+}

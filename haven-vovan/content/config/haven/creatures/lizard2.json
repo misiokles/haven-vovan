@@ -1,0 +1,69 @@
+{
+	"lizard2":
+	{
+		"name" :
+		{
+			"plural" : "Стражи глубин",
+			"singular" : "Страж глубин"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "haven",
+		"aiValue" : 520,
+		"attack" : 11,
+        "cost" :
+		{
+			"gold" : 350
+		},
+		"damage" :
+		{
+			 "max" : 7,
+			 "min" : 6
+		},
+		"defense" : 10,
+		"fightValue" : 520,
+		"graphics" :
+		{
+			"animation" : "haven/battle/lizard2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/lizard2mini.def",
+			"iconSmall" : "haven/iconsSmall/lizard2s.bmp",
+			"iconLarge" : "haven/iconsBig/lizard2l.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 4,
+		"hitPoints" : 27,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "DFLYWNCE.wav",
+			"killed": "BASLKILL.wav",
+			"move": "MINOMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		},
+		"speed" : 6,
+		"abilities" :
+		{
+			"immuneToWater" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.water",
+				"val" : 100
+			},
+			"immuneToWater2" :
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "spellSchool.water"
+			},
+			"scream": {
+				"type" : "SPELL_AFTER_ATTACK",
+				"subtype" : "spell.frostRing",
+				"val" : 30
+			}
+		}
+	}
+}

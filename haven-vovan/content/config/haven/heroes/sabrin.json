@@ -1,0 +1,72 @@
+{
+	"sabrin" : 
+	{
+		"class" : "admiral",
+		"texts" :
+		{
+			"name" : "Сабрин",
+			"biography" : "Один из самых способных учеников Хайдрона, морской епископ Сабрин освоил один из основных компонентов магии шторма — метание молний во врага. Однако ему пока не удалось постичь всю мудрость учения Хайдрона. Продолжая работать в Библиотеке Шторма, он надеется, что вся полнота этого магического искусства откроется ему.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус заклинания: Молния.",
+				"description" : "{Молния}\r\n\r\nПрименяет заклинание Молния, урон которого увеличивается на 5% за каждые n уровней героя (n — уровень целевого существа).",
+				"name" : "Молния"
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/sabrin/spec-small.png",
+			"specialtyLarge" : "haven/heroes/sabrin/spec-large.png",
+			"large" : "haven/heroes/sabrin/portrait-large.png",
+			"small" : "haven/heroes/sabrin/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "undine1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"lightningBolt" : {
+					"subtype" : "spell.lightningBolt",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5
+				}
+			}
+		}
+	}
+}
+
+
+

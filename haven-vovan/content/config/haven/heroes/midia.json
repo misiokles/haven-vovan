@@ -1,0 +1,68 @@
+{
+	"midia" :
+	{
+		"class" : "admiralf",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Мидия",
+			"biography" : "Ученица Хайдрона, оракула глубин, Мидия освоила особую грань Водной Магии - ее ослабляющие эффекты. Подготовив многочисленные рукописи из Библиотеки Шторма, она проникла в самую суть этой части учений Хайдрона и стала непревзойденной в этой области магии.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус заклинания: Слабость",
+				"description" : "{Слабость}\r\n\r\nПрименяет заклинание «Слабость» с усиленным эффектом в зависимости от уровня цели.",
+				"name" : "Слабость"
+			}
+		},		
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/midia/spec-small.png",
+			"specialtyLarge" : "haven/heroes/midia/spec-large.png",
+			"large" : "haven/heroes/midia/portrait-large.png",
+			"small" : "haven/heroes/midia/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+		       "weakness"
+		],
+
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "crab1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "waterMagic"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"weakness" : {
+					"addInfo" : 0,
+					"subtype" : "spell.weakness",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,88 @@
+{
+	"name" : "Гавань",
+	"description" : "Haven Town",
+	"author" : "Ganymed, Necronix, Deo, vovan1698.",
+	"contact" : "http://storm-team.3dn.ru/index/haven_description/0-26",
+	"version" : "1.03",
+	"conflicts": [
+		"haven-town",
+		"haven-old"
+	],
+	"modType" : "Town",
+	"changelog" :
+    {
+		"1.02"   : [ "Some missing buildings" ],
+		"1.01"   : [ "New hero specialty format", "Bugfixes" ],
+		"1.0"   : [ "Initial release" ]
+    },
+	"factions" :
+	[
+		"config/haven/town/buildings.json",
+		"config/haven/town/faction.json",
+		"config/haven/town/siege.json",
+		"config/haven/town/spells.json",
+		"config/haven/town/structures.json",
+		"config/haven/town/puzzle.json"
+
+	],
+	"creatures" :
+	[
+		"config/haven/creatures/triton1.json",
+		"config/haven/creatures/triton2.json",
+		"config/haven/creatures/undine1.json",
+		"config/haven/creatures/undine2.json",
+		"config/haven/creatures/octo1.json",
+		"config/haven/creatures/octo2.json",
+		"config/haven/creatures/crab1.json",
+		"config/haven/creatures/crab2.json",		
+		"config/haven/creatures/crab3.json",		
+		"config/haven/creatures/yachtswoman.json",
+		"config/haven/creatures/vodoley.json",		
+		"config/haven/creatures/siren1.json",
+		"config/haven/creatures/siren2.json",
+		"config/haven/creatures/lizard1.json",
+		"config/haven/creatures/lizard2.json",		
+		"config/haven/creatures/seabishop1.json",
+		"config/haven/creatures/seabishop2.json",
+		"config/haven/creatures/leviathan1.json",
+		"config/haven/creatures/leviathan2.json"
+	],
+	"heroClasses" :
+	[
+		"config/haven/heroes/manowar.json",
+		"config/haven/heroes/manowarf.json",
+		"config/haven/heroes/admiral.json",		
+		"config/haven/heroes/admiralf.json"		
+
+	],
+
+	"heroes" :
+	[
+		"config/haven/heroes/sargas.json",
+		"config/haven/heroes/alligat.json",		
+		"config/haven/heroes/klastrus.json",
+		"config/haven/heroes/undine.json",	
+		"config/haven/heroes/omega.json",
+		"config/haven/heroes/gallas.json",
+		"config/haven/heroes/raven.json",
+		"config/haven/heroes/illyanis.json",		
+		"config/haven/heroes/azul.json",
+	    "config/haven/heroes/aquaron.json",
+    	"config/haven/heroes/maridis.json",
+		"config/haven/heroes/marin.json",
+		"config/haven/heroes/aurora.json",
+	    "config/haven/heroes/stella.json",
+		"config/haven/heroes/sabrin.json",
+		"config/haven/heroes/midia.json",
+	],
+	"objects" : [ 
+		"config/haven/dwellings",
+		"config/haven/boats"
+	],
+	"spells" :
+	[
+		"config/haven/spells/mermaidSeduce.json",
+		"config/haven/spells/seaWrath.json",
+		"config/haven/spells/moat.json"
+	]
+}

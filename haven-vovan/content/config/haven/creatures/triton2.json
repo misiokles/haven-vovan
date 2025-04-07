@@ -1,0 +1,52 @@
+{
+	"triton2":
+	{
+		"name" :
+		{
+			"plural" : "Воины-тритоны",
+			"singular" : "Воин-тритон"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 30,
+			 "min" : 20
+		},
+		"faction" : "haven",
+		"aiValue" : 80,
+		"attack" : 4,
+		"cost" :
+		{
+			"gold" : 70
+		},
+		"damage" :
+		{
+			 "max" : 3,
+			 "min" : 2
+		},
+		"defense" : 4,
+		"fightValue" : 80,
+		"graphics" :
+		{
+			"animation" : "haven/battle/triton2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/triton2mini.def",
+			"iconSmall" : "haven/iconsSmall/triton2s.bmp",
+			"iconLarge" : "haven/iconsBig/triton2l.bmp",
+			"timeBetweenFidgets" : 1
+		},
+	
+		"growth" : 14,
+		"hitPoints" : 7,
+		"horde" : 10,
+		"level" : 1,
+		"sound" :
+		{
+			"attack" : "haven/tritonatk.wav",
+			"defend" : "haven/tritonblk.wav",
+			"killed" : "haven/tritondie.wav",
+			"move": "haven/tritonwlk.wav",
+			"wince" : "haven/tritonhit.wav"
+		},
+		"speed" : 5
+	}
+}

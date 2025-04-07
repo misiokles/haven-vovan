@@ -1,0 +1,59 @@
+{
+	"illyanis" :
+	{
+		"class" : "manowarf",
+		"female" : true,		
+		"texts" :
+		{
+			"name" : "Иллианис",
+			"biography" : "Иллианис — потомок диких сирен. Благодаря своей крови она невосприимчива к их крикам и считает их лучшими солдатами. Известно, что сирены выполняют любые ее просьбы быстрее ветра. Главные черты Иллианис — ее тонкое тактическое чутье и беспощадность к врагам.",
+			"specialty" :
+			{
+				"tooltip" : "Бонус существа: Сирены",
+				"name" : "Сирены",
+				"description" : "{Сирены}\r\n\r\nУвеличивает скорость любой сирены на 1, а также ее навыки атаки и защиты на 5% за каждые 3 уровня (округляя в большую сторону)."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven/heroes/illyanis/spec-small.png",
+			"specialtyLarge" : "haven/heroes/illyanis/spec-large.png",
+			"large" : "haven/heroes/illyanis/portrait-large.png",
+			"small" : "haven/heroes/illyanis/portrait-small.png"
+		},
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "undine1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "tactics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "offence"
+			}
+		],
+		
+		"specialty" : {
+			"creature" : "siren1"
+		}	
+	}
+}

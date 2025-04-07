@@ -1,0 +1,99 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"havTritonBarracks" : {
+				"name" : "Казармы Тритонов",
+				"creatures" : [[ "triton1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel1.def",
+						"mask" : [ "VVV", "VBV", "BAV" ]
+					}
+				}
+			},
+			"havCrabNest" : {
+				"name" : "Крабовое гнездо",
+				"creatures" : [[ "crab1" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "haven/adventure-map/dwel2.def",
+						"mask" : [ "BBV", "BAV" ]
+					}
+				}
+			},			
+			"havSpiderCrabNest" : {
+				"name" : "Гнездо пауков-крабов",
+				"creatures" : [[ "crab3" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "haven/adventure-map/dwelling-8.def",
+						"mask" : [ "VBA" ]
+					}
+				}
+			},
+			"havUndineTower" : {
+				"name" : "Башня ундины",
+				"creatures" : [[ "undine1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel3.def",
+						"mask" : [ "VVV", "VBV", "VAV" ]
+					}
+				}
+			},
+			"havSirensRoost" : {
+				"name" : "Насест сирен",
+				"creatures" : [[ "siren1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel4.def",
+						"mask" : [ "VVV", "VBV", "VAV" ]
+					}
+				}
+			},
+			"havLizardVod" : {
+				"name" : "Морской водоворот",
+				"creatures" : [[ "siren1" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel4alt.def",
+						"mask" : [ "VVV", "VVV", "VBA" ]
+					}
+				}
+			},
+			"havShrineofDepths" : {
+				"name" : "Святилище глубин",
+				"creatures" : [[ "octo1" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel5.def",
+						"mask" : [ "BBV", "VAV" ]
+					}
+				}
+			},
+			"havHydronAcademy" : {
+				"name" : "Академия гидромантии",
+				"creatures" : [[ "seabishop1" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel6.def",
+						"mask" : [ "VVV", "VAB" ]
+					}
+				}
+			},
+			"havLeviathanTemple" : {
+				"name" : "Храм Левиафана",
+				"creatures" : [[ "leviathan1" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "haven/adventure-map/dwel7.def",
+						"mask" : [ "VVV", "BBV", "BAV" ]
+					}
+				}
+			}
+		}		
+	}
+}

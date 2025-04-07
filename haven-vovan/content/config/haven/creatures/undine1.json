@@ -1,0 +1,79 @@
+{
+	"undine1":
+	{
+		"name" :
+		{
+			"plural" : "Ундины",
+			"singular" : "Ундина"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 12
+		},
+		"faction" : "haven",
+		"aiValue" : 210,
+		"attack" : 8,
+        "cost" :
+		{
+			"gold" : 110
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 3
+		},
+		"defense" : 7,
+		"fightValue" : 180,
+		"graphics" :
+		{
+			"animation" : "haven/battle/undine1.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/undine1mini.def",
+			"iconSmall" : "haven/iconsSmall/undine1s.bmp",
+			"iconLarge" : "haven/iconsBig/undine1l.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "PELFX.DEF",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+        },
+		"growth" : 7,
+		"horde" : 6,
+		"hitPoints" : 14,
+		"level" : 3,
+	    "shots" : 16,
+		"upgrades":
+		[
+			"undine2"
+		],
+		"sound" :
+		{
+			"attack": "PIXIATTK.wav",
+			"defend": "PIXIDFND.wav",
+			"killed": "PIXIKILL.wav",
+			"move": "HCRSMOVE.wav",
+			"shoot": "WELFSHOT.wav",
+			"wince": "PIXIWNCE.wav"
+		},
+		"speed" : 6,
+		        "abilities" :
+        {
+		"shooter" :
+			{
+				"type" : "SHOOTER"
+			}
+		}
+	}
+}

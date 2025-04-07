@@ -1,0 +1,73 @@
+{
+	"siren2":
+	{
+		"name" :
+		{
+			"plural" : "Дьявольские сирены",
+			"singular" : "Дьявольская сирена"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 10
+		},
+		"faction" : "haven",
+		"aiValue" : 515,
+		"attack" : 10,
+        "cost" :
+		{
+			"gold" : 330
+		},
+		"damage" :
+		{
+			 "max" : 8,
+			 "min" : 7
+		},
+		"defense" : 9,
+		"fightValue" : 515,
+		"graphics" :
+		{
+			"animation" : "haven/battle/siren2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven/map/siren2mini.def",
+			"iconSmall" : "haven/iconsSmall/siren2s.bmp",
+			"iconLarge" : "haven/iconsBig/siren2l.bmp",
+			"timeBetweenFidgets" : 1
+        },
+		"growth" : 4,
+		"hitPoints" : 29,
+		"level" : 4,
+		"sound" :
+		{
+			"attack": "haven/sirenkiss.wav",
+			"defend": "haven/sirenhit.wav",
+			"killed": "haven/sirendie.wav",
+			"move": "HARPMOVE.wav",
+			"wince": "haven/sirenhit.wav"
+		},
+		"speed" : 9,
+		"abilities" :
+		{
+			"canFly" : 
+			{
+			    "type" : "FLYING"
+			},
+						"castsBloodlust" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.bloodlust",
+				"val" : 2
+			},
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 4
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 3
+			}
+		}
+	}
+}

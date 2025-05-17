@@ -1,0 +1,600 @@
+{
+	"haven-original" :
+	{
+		"town" :
+		{
+			"buildings" :
+			{
+				"mageGuild1" :
+				{
+					"description" : "Вступление в Гильдию магов позволит герою изучить хранящиеся там заклинания.",
+					"name" : "1 этаж гильдии магов",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 2000
+					},
+					"id" : 0
+				},
+				"mageGuild2" :
+				{
+					"description" : "Вступление в Гильдию магов позволит герою изучить хранящиеся там заклинания.",
+					"name" : "2 этаж гильдии магов",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 4,
+						"ore" : 5,
+						"sulfur" : 4,
+						"crystal" : 4,
+						"gems" : 4,
+						"gold" : 1000
+					},
+					"id" : 1,
+					"upgrades" : "mageGuild1"
+				},
+				"mageGuild3" :
+				{
+					"description" : "Вступление в Гильдию магов позволит герою изучить хранящиеся там заклинания.",
+					"name" : "3 этаж гильдии магов",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6,
+						"gold" : 1000
+					},
+					"id" : 2,
+					"upgrades" : "mageGuild2"
+				},
+				"mageGuild4" : 
+				{
+					"description" : "Вступление в Гильдию магов позволит герою изучить хранящиеся там заклинания.",
+					"name" : "4 этаж гильдии магов",
+					"cost" :
+					{
+						"wood" : 5,
+						"mercury" : 8,
+						"ore" : 5,
+						"sulfur" : 8,
+						"crystal" : 8,
+						"gems" : 8,
+						"gold" : 1000
+					},
+					"id" : 3,
+					"upgrades" : "mageGuild3"
+				},
+				"blacksmith" :
+				{
+					"description" : "Кузнец снабжает ваши армии баллистами.",
+					"name" : "Кузница",
+					"warMachine" : "ballista",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"id" : 16
+				},					
+				"tavern" :
+				{
+					"name" : "Таверна",
+					"description" : "Таверна повышает боевой дух войск, защищающих город.",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 5
+				},
+				"shipyard" :
+				{
+					"name" : "Верфь",
+					"description" : "Верфь позволяет вам приобретать корабли.",
+					"cost" :
+					{
+						"wood" : 20,
+						"gold" : 2000
+					},
+					"id" : 6
+				},
+				"fort" :
+				{
+					"name" : "Форт",
+					"description" : "Форт обеспечивает ваш город оборонительными стенами.",
+					"cost" :
+					{
+						"wood" : 20,
+						"ore" : 20,
+						"gold" : 5000
+					},
+					"id" : 7
+				},
+				"citadel" :
+				{
+					"name" : "Цитадель",
+					"description" : "Помимо 50%-ного увеличения базового прироста существ, Цитадель добавляет сторожевую башню и другие препятствия на местности к обороноспособности города.",
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 2500
+					},
+					"id" : 8,
+					"upgrades" : "fort"
+				},
+				"castle" :
+				{
+					"name" : "Замок",
+					"description" : "Замок добавляет две башни для стрельбы из луков, укрепляет оборону вашего города и удваивает базовый прирост существ.",
+					"cost" :
+					{
+						"wood" : 10,
+						"ore" : 10,
+						"gold" : 5000
+					},
+					"id" : 9,
+					"upgrades" : "citadel"
+				},
+				"villageHall" :
+				{
+					"name" : "Сельская управа",
+					"description" : "Сельская управа позволяет вам приобретать городские постройки и приносит вашему королевству 500 золотых в день.",
+					"id" : 10,
+					"mode" : "auto"
+				},
+				"townHall" :
+				{
+					"name" : "Ратуша",
+					"description" : "Ратуша позволяет вам приобретать городские постройки и приносит вашему королевству 1000 золотых в день.",
+					"cost" :
+					{
+						"gold" : 2500
+					},
+					"id" : 11,
+					"requires" : [ "tavern" ],
+					"upgrades" : "villageHall"
+				},
+				"cityHall" :
+				{
+					"name" : "Магистрат",
+					"description" : "Магистрат позволяет вам приобретать городские постройки и приносит вашему королевству 2000 золотых в день.",
+					"cost" :
+					{
+						"gold" : 5000
+					},
+					"requires" : [ "allOf", [ "mageGuild1" ], [ "blacksmith" ], [ "marketplace" ] ],
+					"id" : 12,
+					"upgrades" : "townHall"
+				},
+				"capitol" :
+				{
+					"name" : "Капитолий",
+					"description" : "Капитолий приносит вашему королевству 4000 золотых в день.",
+					"cost" :
+					{
+						"gold" : 10000
+					},
+					"id" : 13,
+					"requires" : [ "castle" ],
+					"upgrades" : "cityHall"
+				},
+				"marketplace" :
+				{
+					"name" : "Рынок",
+					"description" : "С помощью Торговой площадки вы можете покупать и продавать ресурсы (обменный курс увеличивается с каждой принадлежащей вам Торговой площадкой).",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 500
+					},
+					"id" : 14
+				},								
+				"resourceSilo" :
+				{
+					"description" : "Хранилище ресурсов дает вам дополнительный кристалл +1 каждый день.",
+					"name" : "Хранилище ресурсов",
+					"produce": { "crystal": 1 },
+					"cost" :
+					{
+						"ore" : 5,
+						"gold" : 5000
+					},
+					"requires" : [ "marketplace" ],
+					"id" : 15
+				},
+				"special1" :
+				{
+					"name" : "Алтарь морского бриза",
+					"description" : "Алтарь морского бриза способствует приходу магических обитателей глубин, обеспечивающих силу заклинаний героев на +2 при осаде.",
+					"cost" :
+					{
+						"gems" : 5,
+						"gold" : 2000
+					},
+					"bonuses": [
+					{
+						"type": "PRIMARY_SKILL",
+						"subtype": "primarySkill.spellpower",
+						"val": 2
+					}
+				],
+					"id" : 17
+				},
+				"horde1" :
+				{
+					"description" : "Трезубец морского владыки увеличивают еженедельное производство тритонов на 9 особей в неделю.",
+					"name" : "Трезубец морского владыки",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl1"] ],
+					"upgrades" : "dwellingLvl1",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"id" : 18			
+				},
+				"horde1Upg" :
+				{
+					"description" : "Трезубец морского владыки увеличивают еженедельное производство воинов-тритонов на 9 особей в неделю.",
+					"name" : "Трезубец морского владыки",
+					"requires" : [ "horde1" ],
+					"upgrades" : "dwellingUpLvl1",
+					"mode" : "auto",
+					"id" : 19			
+				},
+				"ship" :
+				{
+					"name" : "Корабль",
+					"description" : "Ваша команда ждет.",
+					"id" : 20
+				},
+				"special2" :
+				{
+					"description" : "Школа Ненависти неотъемлемый элемент городского общества, здесь вы можете получить 500 золотых ежедневно.",
+					"name" : "Школа Ненависти",
+					"cost" : {
+						"gems" : 5,
+						"gold" : 3500
+					},
+					"produce": { "gold": 500 },
+					"requires" : [ "mageGuild1" ],
+					"id" : 22
+				},
+				"special3" :
+				{
+					"description" : "Маяк указывает путь кораблям.",
+					"name" : "Маяк",
+					"cost" : {
+						"gold" : 1000
+					},
+					"manualHeroVisit" : true,
+					"configuration" : {
+					"visitMode" : "hero",
+					"variables" : {
+						"secondarySkill" : {
+							"gainedSkill" : { 
+								"anyOf" : ["navigation"]
+							}
+						}
+					},
+					"visitLimiter" : {
+						"secondary" : {
+						"@gainedSkill" : 1
+							      }
+							 },
+						"rewards" :
+							[    
+                    							{
+							"secondary" : 		{
+								"@gainedSkill" : 1
+								      		},
+								"resources" :   {
+								"gold" : -1000
+										},
+								"limiter": 
+										{
+								"canLearnSkills" : true,
+								"noneOf" : [
+										{
+									"secondary" : {
+										"@gainedSkill" : 1
+										      }
+										}
+									   ],
+								"resources" : {"gold" : 1000}
+									},
+							"message": "{Маяк}\r\n\r\nВы посещаете маяк и встречаете старого смотрителя. Похоже, что у него есть чему вас научить. Если вы пожертвуете 1000 золотых, он обучит вас своему мастерству."
+                    						}
+
+               						],
+				"onSelectMessage" : "{Маяк}\r\n\r\nВы посещаете маяк и встречаете старого смотрителя. Похоже, что у него есть чему вас научить. Если вы пожертвуете 1000 золотых, он обучит вас своему мастерству.",
+                "onVisitedMessage": "{Маяк}\r\n\r\nВы посещаете маяк и встречаете старого смотрителя. Но похоже, что у ему нечему вас научить. Вы уже превзошли его в этом деле.",
+				"onEmptyMessage": "{Маяк}\r\n\r\nВы посещаете маяк и встречаете старого смотрителя. Похоже, что у него есть чему вас научить. Однако вы отклоняете данное предложение.",  
+				"canRefuse": true,
+				"selectMode" : "selectPlayer"
+					},
+					"requires" : [ "resourceSilo" ],
+					"id" : 23
+				},
+				"horde2" :
+				{
+					"description" : "Морские обитатели увеличивают еженедельное огромных крабов на 7 особей в неделю.",
+					"name" : "Морские обитатели",
+					"requires" : [ "allOf", ["fort"], ["dwellingLvl2"] ],
+					"upgrades" : "dwellingLvl2",
+					"cost" :
+					{
+						"wood" : 5,
+						"gold" : 1000
+					},
+					"id" : 24			
+				},
+				"horde2Upg" :
+				{
+					"description" : "Морские обитатели увеличивают еженедельное производство бронированных крабов на 7 особей в неделю.",
+					"name" : "Морские обитатели",
+					"requires" : [ "horde2" ],
+					"upgrades" : "dwellingUpLvl2",
+					"mode" : "auto",
+					"id" : 25			
+				},
+				"grail" :
+				{
+					"description" : "Корабль-призрак увеличивает еженедельную генерацию существ на 50 процентов и добавляет 5000 золота в день, а также убирает штрафы передвижения при высадке и посадке на корабли и добавляет +1000 очков передвижения по воде.",
+					"name" : "Корабль-призрак",
+					"id" : 26,
+					"produce": { "gold": 5000 },
+					"bonuses" : [
+						{
+							"type" : "FREE_SHIP_BOARDING",
+							"val" : 0,
+							"valueType" : "BASE_NUMBER",
+							"propagator" : "GLOBAL_EFFECT",
+							"limiters" : [
+								{
+									"type": "CREATURE_FACTION_LIMITER",
+									"parameters" : ["haven-original"]
+								}
+							]
+						},
+						{
+						"type" : "MOVEMENT",
+						"subtype" : "heroMovementSea",
+						"val" : 1000,
+						"propagator" : "GLOBAL_EFFECT",
+							"limiters" : [
+								{
+									"type": "CREATURE_FACTION_LIMITER",
+									"parameters" : ["haven-original"]
+								}
+							]
+					}
+					],
+					"mode" : "grail"
+				},
+				"dwellingLvl1" :
+				{
+					"description" : "Казармы Тритонов позволяют вам нанимать тритонов.",
+					"name" : "Казармы Тритонов",
+					"cost" : {
+						"gold" : 1000,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"requires" : [ "fort" ],
+					"id" : 30
+				},
+				"dwellingLvl2" :
+				{
+					"description" : "Гнездо крабов позволяет вам нанимать огромных крабов.",
+					"name" : "Гнездо крабов",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 10
+					},
+					"requires" : [ "dwellingLvl1" ],
+					"id" : 31
+				},
+				"dwellingLvl3" :
+				{
+					"description" : "Береговой пост позволяет вам нанимать ундин.",
+					"name" : "Береговой пост",
+					"cost" : {
+						"gold" : 2000,
+						"ore" : 5,
+						"wood" : 5,
+						"mercury" : 5,
+						"gems" : 5
+					},
+					"requires" : [ "dwellingLvl2" ],
+					"id" : 32
+				},
+				"dwellingLvl4" :
+				{
+					"description" : "Прибрежный грот позволяет вам нанимать сирен.",
+					"name" : "Прибрежный грот",
+					"cost" : {
+						"gold" : 2000,
+						"mercury" : 3,
+						"wood" : 5,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+						},
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl4alt" ] ] ],
+					"id" : 33
+				},
+				"dwellingLvl4alt" :
+				{
+					"description" : "Морской водоворот позволяет вам нанимать морских ящеров.",
+					"name" : "Морской водоворот",
+					"cost" : {
+						"gold" : 2000,
+						"mercury" : 3,
+						"wood" : 5,
+						"crystal" : 3,
+						"gems" : 3,
+						"sulfur" : 3
+						},
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "noneOf", [ "dwellingLvl4" ] ] ],
+					"id" : 47
+				},
+				"dwellingLvl5" :
+				{
+					"description" : "Святилище глубин позволяет вам нанимать русалок.",
+					"name" : "Святилище глубин",
+					"cost" : {
+						"gold" : 3000,
+						"ore" : 5,
+						"wood" : 5,
+						"mercury" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "anyOf", [ "dwellingLvl4" ], [ "dwellingLvl4alt" ] ] ]
+					"id" : 34
+				},
+				"dwellingLvl6" :
+				{
+					"description" : "Академия гидромантии позволяет вам нанимать Гидромантов.",
+					"name" : "Академия гидромантии",
+					"cost" : {
+						"gold" : 4000,
+						"ore" : 5,
+						"wood" : 5,
+						"sulfur" : 5,
+						"gems" : 5
+					},
+					"requires" : [ "allOf", [ "dwellingLvl5" ], [ "mageGuild1" ] ],
+					"id" : 35
+				},
+				"dwellingLvl7" :
+				{
+					"description" : "Храм Левиафана позволяет вам нанимать Морских Змеев.",
+					"name" : "Храм Левиафана",
+					"cost" : {
+						"gold" : 10000,
+						"wood" : 10,
+						"mercury" : 10,
+						"ore" : 10,
+						"sulfur" : 10,
+						"crystal" : 10,
+						"gems" : 10
+					},
+					"requires" : [ "allOf", [ "dwellingLvl3" ], [ "mageGuild1" ], [ "special1" ] ],
+					"id" : 36
+				},
+				"dwellingUpLvl1" :
+				{
+					"description" : "Казармы Тритонов позволяют вам нанимать воинов-тритонов.",
+					"name" : "ул. Казармы Тритонов",
+					"cost" : {
+						"gold" : 1000,
+						"wood" : 5,
+						"ore" : 5
+					},
+					"id" : 37,
+					"upgrades" : "dwellingLvl1"
+				},
+				"dwellingUpLvl2" :
+				{
+					"description" : "Гнездо крабов позволяет вам нанимать бронированных крабов.",
+					"name" : "ул. Гнездо крабов",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 5,
+						"wood" : 5
+					},
+					"id" : 38,
+					"upgrades" : "dwellingLvl2"
+				},
+				"dwellingUpLvl3" :
+				{
+					"description" : "Береговой пост позволяет вам нанимать ундин-снайперов.",
+					"name" : "ул. Береговой пост",
+					"cost" : {
+						"gold" : 1500,
+						"ore" : 10,
+						"wood" : 5
+					},
+					"id" : 39,
+					"requires" :   [ "allOf", ["fort"],["dwellingUpLvl1"] ],		
+					"upgrades" : "dwellingLvl3"
+				},
+				"dwellingUpLvl4" :
+				{
+					"description" : "Прибрежный грот позволяет вам нанимать дьявольских сирен.",
+					"name" : "ул. Прибрежный грот",
+					"cost" : {
+						"mercury" : 5,
+						"ore" : 5,
+						"gold" : 1500,
+						"crystal" : 5
+					},
+					"id" : 40,
+					"upgrades" : "dwellingLvl4"
+				},
+				"dwellingUpLvl4alt" :
+				{
+					"description" : "Морской водоворот позволяет вам нанимать стражей глубин.",
+					"name" : "ул. Морской водоворот",
+					"cost" : {
+						"mercury" : 5,
+						"ore" : 5,
+						"gold" : 1500,
+						"crystal" : 5
+					},
+					"id" : 54,
+					"upgrades" : "dwellingLvl4alt"
+				},
+				"dwellingUpLvl5" :
+				{
+					"description" : "Святилище Глубин позволяет вам нанимать глубинных русалок.",
+					"name" : "ул. Святилище Глубин",
+					"cost" : {
+						"ore" : 5,
+						"wood" : 5,
+						"gold" : 2000,
+						"crystal" : 10
+					},
+					"id" : 41,
+					//"requires" : [ "mageGuild1" ],
+					"upgrades" : "dwellingLvl5"
+				},
+				"dwellingUpLvl6" :
+				{
+					"description" : "Академия гидромантии позволяет вам нанимать Криомантов.",
+					"name" : "ул. Академия гидромантии",
+					"cost" : {
+						"gold" : 3000,
+						"wood" : 5,
+						"mercury" : 6,
+						"ore" : 5,
+						"sulfur" : 6,
+						"crystal" : 6,
+						"gems" : 6
+					},
+					"id" : 42,
+					"upgrades" : "dwellingLvl6"
+				},
+				"dwellingUpLvl7" :
+				{
+					"description" : "Храм Левиафана позволяет вам нанимать хозяев морей.",
+					"name" : "ул. Храм Левиафана",
+					"cost" : {
+						"ore" : 10,
+						"gold" : 25000,
+						"wood" : 10,
+						"sulfur" : 20
+					},
+					"id" : 43,
+					"upgrades" : "dwellingLvl7",
+					"requires" : [ "mageGuild2" ],
+				}
+			}
+		}
+	}
+}
+

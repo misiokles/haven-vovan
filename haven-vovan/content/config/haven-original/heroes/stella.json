@@ -1,0 +1,70 @@
+{
+	"stella" :
+	{
+		"class" : "admiralf",
+		"female" : true,
+		"texts" :
+		{
+			"name" : "Стелла",
+			"biography" : "Стелла проводила много времени в библиотеках, изучая древние рукописи с затонувших кораблей в водоворотах. Именно по этой причине она быстро стала могущественным магом. В первую очередь она сосредоточила свои исследования на заклинании Haste. Услышав об этих ее способностях, Рейвен присвоил ей звание адмирала в своей миссии",
+			"specialty" :
+			{
+				"tooltip" : "Бонус заклинания: Ускорение",
+				"name" : "Ускорение",
+				"description" : "{Ускорение}\r\n\r\nПрименяет заклинание Ускорение с усиленным эффектом в зависимости от уровня цели."
+			}
+		},
+		"images" :
+		{
+			"specialtySmall" : "haven-original/heroes/stella/spec-small.png",
+			"specialtyLarge" : "haven-original/heroes/stella/spec-large.png",
+			"large" : "haven-original/heroes/stella/portrait-large.png",
+			"small" : "haven-original/heroes/stella/portrait-small.png"
+		},
+
+		"spellbook" :
+		[
+			"haste"
+		],
+		"army" :
+		[
+			{
+				"creature" : "triton1",
+				"max" : 30,
+				"min" : 20
+			},
+			{
+				"creature" : "crab1",
+				"max" : 10,
+				"min" : 5
+			},
+			{
+				"creature" : "undine1",
+				"max" : 4,
+				"min" : 3
+			}
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+			{
+				"level" : "basic",
+				"skill" : "learning"
+			}
+		],
+		
+		"specialty" : {
+			"bonuses" : {
+				"haste" : {
+					"addInfo" : 0,
+					"subtype" : "spell.haste",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
+			}
+		}
+	}
+}

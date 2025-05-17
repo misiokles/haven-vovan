@@ -1,0 +1,51 @@
+{
+	"crab3":
+	{
+		"name" :
+		{
+			"plural" : "Крабы-пауки",
+			"singular" : "Краб-паук"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "haven-original",
+		"aiValue" : 221,
+		"attack" : 9,
+        "cost" :
+		{
+			"gold" : 115
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 3
+		},
+		"defense" : 7,
+		"fightValue" : 226,
+		"graphics" :
+		{
+			"animation" : "haven-original/battle/crab3.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven-original/map/crab3mini.def",
+			"iconSmall" : "haven-original/iconsSmall/crab3s.bmp",
+			"iconLarge" : "haven-original/iconsBig/crab3l.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"growth" : 10,
+	    "doubleWide" : true,			
+		"hitPoints" : 16,
+        "level" : 2,
+		"sound" :
+		{
+			"attack" : "haven-original/crabatk.wav",
+			"defend" : "haven-original/crabblk.wav",
+			"killed" : "haven-original/crabdie.wav",
+			"move": "haven-original/crabwlk.wav",
+			"wince" : "haven-original/crabhit.wav"
+		},
+		"speed" : 5
+	}
+}

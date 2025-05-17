@@ -1,0 +1,94 @@
+{
+	"octo1":
+	{
+		"name" :
+		{
+			"plural" : "Русалки",
+			"singular" : "Русалка"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 16,
+			 "min" : 8
+		},
+		"faction" : "haven-original",
+		"aiValue" : 500,
+		"attack" : 11,
+		"cost" :
+		{
+			"gold" : 400
+		},
+		"damage" :
+		{
+			 "max" : 13,
+			 "min" : 10
+		},
+		"defense" : 10,
+		"doubleWide" : true,
+		"fightValue" : 400,
+		"graphics" :
+		{
+			"animation" : "haven-original/battle/octo1.def",
+			"map" : "haven-original/map/octo1mini.def",
+			"iconSmall" : "haven-original/iconsSmall/octo1s.bmp",
+			"iconLarge" : "haven-original/iconsBig/octo1l.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 2,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+	
+		},
+
+        "growth" : 3,
+	"horde" : 2,
+		"hitPoints" : 39,
+		"level" : 5,
+                "upgrades":
+		[
+			"octo2"
+		],
+		"sound" :
+		{
+			"attack" : "haven-original/octoatk.wav",
+			"defend" : "haven-original/octohit.wav",
+			"killed" : "haven-original/octodie.wav",
+			"move": "haven-original/octowlk.wav",
+			"wince" : "haven-original/octohitw.wav"
+ 		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"lucky" :
+			{
+				"type" : "LUCK",
+				"val" : 1,
+				"valueType" : "INDEPENDENT_MAX"
+			},
+			"castLength" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 6
+			}, 	
+			"castsFortune" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fortune",
+				"val" : 2
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 2
+			},
+			"whirlpoolProtection" : 
+			{ 
+				"type" : "WHIRLPOOL_PROTECTION", 
+				"propagator" : "HERO"
+			}
+		}
+	}
+}
+

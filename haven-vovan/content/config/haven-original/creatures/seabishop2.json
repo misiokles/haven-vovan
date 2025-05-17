@@ -1,0 +1,75 @@
+{
+	"seabishop2":
+	{
+		"name" :
+		{
+			"plural" : "Криоманты",
+			"singular" : "Криомант"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 5
+		},
+		"faction" : "haven-original",
+		"aiValue" : 1450,
+		"attack" : 15,
+		"cost" :
+		{
+			"gold" : 1100
+		},
+		"damage" :
+		{
+			 "max" : 21,
+			 "min" : 16
+		},
+		"defense" : 12,
+		"fightValue" : 980,
+		"graphics" :
+		{
+			"animation" : "haven-original/battle/seabishop2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven-original/map/seabishop2mini.def",
+			"iconSmall" : "haven-original/iconsSmall/seabishop2s.bmp",
+			"iconLarge" : "haven-original/iconsBig/seabishop2l.bmp",
+			"timeBetweenFidgets" : 1,
+			"missile" :
+			{
+     			"projectile" : "haven-original/battle/missie/frozenShot.def",	
+			    "attackClimaxFrame" : 8,
+				"offset" :
+				{
+					"upperX" : 41,
+					"upperY" : -92,
+					"middleX" : 58,
+					"middleY" : -79,
+					"lowerX" : 29,
+					"lowerY" : -14
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},			
+		},
+		
+		"growth" : 2,
+		"shots" : 18,		
+		"hitPoints" : 75,
+		"level" : 6,
+		"sound" :
+		{
+			"attack" : "haven-original/seaatk.wav",
+			"shoot": "ICERAY.wav",			
+			"defend" : "haven-original/seaatk.wav",
+			"killed": "haven-original/KRIOKILL.wav",
+			"move": "haven-original/blank.wav",
+			"startMoving": "TAILWIND.wav",
+			"endMoving": "TAILWIND.wav",			
+			"wince": "PIKEWNCE.wav"               
+		},
+		"speed" : 8,
+		"abilities" : 
+		{
+			"shooter" :	{ "type" : "SHOOTER" },
+			"teleports" : { "type" : "FLYING", "subtype" : "movementTeleporting" }
+		}
+	}
+}

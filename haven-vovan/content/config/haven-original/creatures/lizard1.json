@@ -1,0 +1,68 @@
+{
+	"lizard1":
+	{
+		"name" :
+		{
+			"plural" : "Морские ящеры",
+			"singular" : "Морской ящер"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 10
+		},
+		"faction" : "haven-original",
+		"aiValue" : 515,
+		"attack" : 11,
+        "cost" :
+		{
+			"gold" : 300
+		},
+		"damage" :
+		{
+			 "max" : 7,
+			 "min" : 6
+		},
+		"defense" : 10,
+		"fightValue" : 515,
+		"graphics" :
+		{
+			"animation" : "haven-original/battle/lizard1.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven-original/map/lizard1mini.def",
+			"iconSmall" : "haven-original/iconsSmall/lizard1s.bmp",
+			"iconLarge" : "haven-original/iconsBig/lizard1l.bmp",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 4,
+		"hitPoints" : 26,
+		"level" : 4,
+		"upgrades":
+		[
+			"lizard2"
+		],
+		"sound" :
+		{
+			"attack": "PIKEATTK.wav",
+			"defend": "DFLYWNCE.wav",
+			"killed": "BASLKILL.wav",
+			"move": "MINOMOVE.wav",
+			"wince": "BASLWNCE.wav"
+		},
+		"speed" : 5,
+		"abilities" :
+		{
+			"immuneToWater" :
+			{
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"subtype" : "spellSchool.water",
+				"val" : 100
+			},
+			"immuneToWater2" :
+			{
+				"type" : "SPELL_SCHOOL_IMMUNITY",
+				"subtype" : "spellSchool.water"
+			}
+		}
+	}
+}

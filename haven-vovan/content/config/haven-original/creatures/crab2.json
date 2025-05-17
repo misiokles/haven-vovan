@@ -1,0 +1,59 @@
+{
+	"crab2":
+	{
+		"name" :
+		{
+			"plural" : "Бронированные крабы",
+			"singular" : "Бронированный краб"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 25,
+			 "min" : 16
+		},
+		"faction" : "haven-original",
+		"aiValue" : 210,
+		"attack" : 7,
+        "cost" :
+		{
+			"gold" : 125
+		},
+		"damage" :
+		{
+			 "max" : 4,
+			 "min" : 3
+		},
+		"defense" : 7,
+		"fightValue" : 195,
+		"graphics" :
+		{
+			"animation" : "haven-original/battle/crab2.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"map" : "haven-original/map/crab2mini.def",
+			"iconSmall" : "haven-original/iconsSmall/crab2s.bmp",
+			"iconLarge" : "haven-original/iconsBig/crab2l.bmp",
+			"timeBetweenFidgets" : 1,
+		},
+		"growth" : 8,
+	    "doubleWide" : true,			
+		"hitPoints" : 20,
+        "level" : 2,
+		"abilities" :
+		{
+			"extraAttack" :
+			{
+				"type" : "ADDITIONAL_ATTACK",
+				"val" : 1
+			}
+		},		
+		"sound" :
+		{
+			"attack" : "haven-original/crabatk.wav",
+			"defend" : "haven-original/crabblk.wav",
+			"killed" : "haven-original/crabdie.wav",
+			"move": "haven-original/crabwlk.wav",
+			"wince" : "haven-original/crabhit.wav"
+		},
+		"speed" : 4
+	}
+}
